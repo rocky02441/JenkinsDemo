@@ -1,0 +1,44 @@
+pipeline {
+    agent any
+
+    stages {
+        stage('Checkout') {
+            steps {
+                echo 'Hello Checkout'
+            }
+        }
+    }
+}
+pipeline {
+    agent any
+
+    stages {
+        stage('Build') {
+            steps {
+                echo 'Hello Build'
+            }
+        }
+    }
+}
+pipeline {
+    agent any
+
+    stages {
+        stage('Application Test') {
+            steps {
+                echo 'Hello Test'
+            }
+        }
+    }
+}
+pipeline {
+    agent any
+
+    stages {
+        stage('Deploy') {
+            steps {
+                echo 'Hello Deploy'
+            }
+        }
+    }
+}
