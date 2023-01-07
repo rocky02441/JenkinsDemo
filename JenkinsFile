@@ -8,9 +8,7 @@ pipeline {
             }
         }
     }
-}
-pipeline {
-    agent any
+
 
     stages {
         stage('Build') {
@@ -19,9 +17,7 @@ pipeline {
             }
         }
     }
-}
-pipeline {
-    agent any
+
 
     stages {
         stage('Application Test') {
@@ -30,9 +26,7 @@ pipeline {
             }
         }
     }
-}
-pipeline {
-    agent any
+
 
     stages {
         stage('Deploy') {
